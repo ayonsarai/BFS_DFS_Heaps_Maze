@@ -6,19 +6,23 @@ For my presentation I have chosen to present the Data Structures HW 4 : Breadth 
 
 What worked well: I had access to a lot of resources and the internet to be able to support this project, In addition I met 1-1 with my tutor Kai and also attended a study group. I also utilized tools such as Github, Codeachademy, Youtube, ChatGBT and Copilot. 
 
-# Resources: Codeademy.com Graph Data Structures, BroCode Youtube video "Learn Breadth First Search in 6 minutes", [C++] ASCII art - Maze Blaze game youtube video,  Grokking Chapter 6  Breadth-First Search, Chapter 7 Dijkstra’s Algorithm, Skiena pg 145, 162-184 , Skiena Chapter 7 Heuristic Methods.
+# Resources: 
+
+Codeademy.com Graph Data Structures, BroCode Youtube video "Learn Breadth First Search in 6 minutes", [C++] ASCII art - Maze Blaze game youtube video,  Grokking Chapter 6  Breadth-First Search, Chapter 7 Dijkstra’s Algorithm, Skiena pg 145, 162-184 , Skiena Chapter 7 Heuristic Methods.
 
 
 
 
 # Technical Description: 
 
-## In my main method: I have defined a 2D array to represent the maze. I am then calling the BFS, DFS, and Heaps methods, passing the maze, start, and end as parameters to each method.
+## In my main method: 
+
+I have defined a 2D array to represent the maze. I am then calling the BFS, DFS, and Heaps methods, passing the maze, start, and end as parameters to each method.
 
 
 
 
-## In the BFS method: the Breadth First Search algorithm to solve a maze.
+## In the BFS method: the Breadth First Search algorithm to solve a maze. This Uses a queue to explore the maze level by level & Finds the shortest path in an unweighted maze.
 
 * I start by initializing a queue, a boolean array visited to keep track of visited nodes, and an integer array parent to keep track of the parent of each node. I add the start node to the queue, mark it as visited, and set its parent as -1 since it has no parent.
 * Then, I enter a loop that continues until the queue is empty. In each iteration, I dequeue a node and check if it's the end node. If it is, I break the loop. If it's not, I iterate over all the nodes in the maze. If a node is connected to the current node (indicated by maze[current][i] == 1) and it hasn't been visited yet, I add it to the queue, mark it as visited, and set its parent as the current node.
@@ -28,7 +32,7 @@ What worked well: I had access to a lot of resources and the internet to be able
 
 
 
-## Depth First Search (DFS) Method: This algorithm is also used to solve the maze.
+## Depth First Search (DFS) Method: This algorithm is also used to solve the maze. This Uses recursion to explore all possible paths & Determines if there is a path from the start to the end.This Uses a priority queue (min-heap) to explore paths in a weighted maze.& Finds the shortest path considering weights.
 
 * I start by initializing a stack, a boolean array visited to keep track of visited nodes, and an integer array parent to keep track of the parent of each node. I push the start node onto the stack, mark it as visited, and set its parent as -1 since it has no parent.
 * Then, I enter a loop that continues until the stack is empty. In each iteration, I pop a node from the stack and check if it's the end node. If it is, I break the loop. If it's not, I iterate over all the nodes in the maze. If a node is connected to the current node (indicated by maze[current][i] == 1) and it hasn't been visited yet, I push it onto the stack, mark it as visited, and set its parent as the current node.

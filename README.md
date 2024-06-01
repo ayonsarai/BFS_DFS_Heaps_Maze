@@ -1,18 +1,5 @@
 # BFS_DFS_Heaps_Maze
 
-Hi there!
-
-For my presentation I have chosen to present the Data Structures HW 4 : Breadth First Search and Depth First Search Trees and Heaps (OPTIONAL) - Extra Credit (click here) 
-
-What worked well: I had access to a lot of resources and the internet to be able to support this project, In addition I met 1-1 with my tutor Kai and also attended a study group. I also utilized tools such as Github, Codeachademy, Youtube, ChatGBT and Copilot. 
-
-# Resources: 
-
-Codeademy.com Graph Data Structures, BroCode Youtube video "Learn Breadth First Search in 6 minutes", [C++] ASCII art - Maze Blaze game youtube video,  Grokking Chapter 6  Breadth-First Search, Chapter 7 Dijkstra’s Algorithm, Skiena pg 145, 162-184 , Skiena Chapter 7 Heuristic Methods.
-
-
-
-
 # Technical Description: 
 
 ## In my main method: 
@@ -63,6 +50,8 @@ I have defined a 2D array to represent the maze. I am then calling the BFS, DFS,
 * The Node class is a static inner class of the Heap class. Each Node object represents a node in the heap, containing a vertex (which represents a node in the maze) and a distance (which represents the shortest known distance from the start node to this node).
 
 
+# Resources: 
 
+Codeademy.com Graph Data Structures, BroCode Youtube video "Learn Breadth First Search in 6 minutes", [C++] ASCII art - Maze Blaze game youtube video,  Grokking Chapter 6  Breadth-First Search, Chapter 7 Dijkstra’s Algorithm, Skiena pg 145, 162-184 , Skiena Chapter 7 Heuristic Methods.
 
 
